@@ -21,3 +21,6 @@ puts "🌱 Seeding data..."
 end
 
 puts "🌱 Done seeding!"
+
+game = Game.first
+game.reviews.create(score: 4, comment: "it's alright I guess")
